@@ -9,10 +9,11 @@
  }
  @media (min-width:992px) {
  	body {
- 		padding-top:0;
+ 		padding-top:10;
  		padding-left:17rem
  	}
 }
+
 h1,h2,h3,h4,h5,h6 {
 	font-family:'PT Sans';
  	font-weight:bold;
@@ -131,6 +132,9 @@ p
 .flag:hover{
     color: #b1b6e2;
 }
+.picture{
+	width: 800px;
+}
 .dev-icons{
 	font-size:5rem
 	}
@@ -145,7 +149,7 @@ p
 #sideNav .navbar-toggler:focus{
 	outline-color:#d48a6e
 	}
-@media (min-width:992px){
+@media (min-width:900px){
 	#sideNav{
 		text-align:center;
 		position:fixed;
@@ -157,8 +161,8 @@ p
 		-webkit-box-direction:normal;
 		-ms-flex-direction:column;
 		flex-direction:column;
-		width:17rem;
-		height:100vh
+		width:19rem;
+		height:100vh;
 	}
 	#sideNav .navbar-brand{
 		display:-webkit-box;
@@ -201,7 +205,8 @@ p
 section.resume-section{
 	padding-top:0rem !important;
 	padding-bottom:0rem !important;
-	max-width:75rem
+	max-width:75rem;
+	margin-left: 15px;
 	}
 section.resume-section .resume-item .resume-date{
 	min-width:none
