@@ -54,6 +54,7 @@ p
 .sub-title-prayer{
 	padding-bottom: 1.2em;
 	margin-top: 1.2em;
+	width:90%;
 }
 .intro{
 	padding-bottom: 1em;
@@ -133,7 +134,8 @@ p
     color: #b1b6e2;
 }
 .picture{
-	width: 80%;
+	padding-top: 15px;
+	width: 100%;
 }
 .dev-icons{
 	font-size:5rem
@@ -206,7 +208,7 @@ section.resume-section{
 	padding-top:0rem !important;
 	padding-bottom:0rem !important;
 	max-width:75rem;
-	margin-left: 5px;
+	margin-left: 0px;
 	width: 100%;
 	}
 section.resume-section .resume-item .resume-date{
