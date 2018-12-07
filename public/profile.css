@@ -45,7 +45,7 @@ p
 }
 .link{
 	font-weight: 800;
-	color:#824027
+	color:#7c82bc
 }
 .sub-title{
 	padding-bottom: 1.2em;
@@ -223,5 +223,5 @@ section.resume-section .resume-item .resume-date{
 		}
 		a:active,a:focus,a:hover{
 			font-weight: 800;
-			color:#824027
+			color:#7c82bc
 		}
