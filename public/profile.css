@@ -9,9 +9,15 @@
  }
  @media (min-width:992px) {
  	body {
- 		padding-top:10;
+ 		padding-top:0;
  		padding-left:17rem
  	}
+}
+
+@media (min-width:992px) {
+	.name {
+		display: none;
+	}
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -133,7 +139,7 @@ p
     color: #b1b6e2;
 }
 .picture{
-	width: 800px;
+	width: 80%;
 }
 .dev-icons{
 	font-size:5rem
@@ -206,7 +212,7 @@ section.resume-section{
 	padding-top:0rem !important;
 	padding-bottom:0rem !important;
 	max-width:75rem;
-	margin-left: 15px;
+	margin-left: 5px;
 	}
 section.resume-section .resume-item .resume-date{
 	min-width:none
