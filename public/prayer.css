@@ -1,7 +1,9 @@
 #pray_detail {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
 }
 
 #pray_name {
-    width: 120px;
+    width: 80%;
+    max-width: 120px;
 }
