@@ -119,13 +119,13 @@ p
 	margin-right:0
 	}
 .social-icons a:hover{
-	background-color:#ad95ac;
+	background-color:#7c82bc;
 	}
 .flag{
 	font-size: 1.3em;
 }
 .flag:hover{
-    color: #824027;
+    color: #b1b6e2;
 }
 .dev-icons{
 	font-size:5rem
@@ -213,7 +213,7 @@ section.resume-section .resume-item .resume-date{
 			padding-top:1rem!important;}
 			}
 		.bg-primary{
-			background-color:#ad95ac!important
+			background-color:#7c82bc!important
 			}
 		.text-primary{
 			color:#ad95ac!important
