@@ -14,12 +14,6 @@
  	}
 }
 
-@media (min-width:992px) {
-	.name {
-		display: none;
-	}
-}
-
 h1,h2,h3,h4,h5,h6 {
 	font-family:'PT Sans';
  	font-weight:bold;
@@ -155,7 +149,7 @@ p
 #sideNav .navbar-toggler:focus{
 	outline-color:#d48a6e
 	}
-@media (min-width:900px){
+@media (min-width:992px){
 	#sideNav{
 		text-align:center;
 		position:fixed;
@@ -213,6 +207,7 @@ section.resume-section{
 	padding-bottom:0rem !important;
 	max-width:75rem;
 	margin-left: 5px;
+	width: 100%;
 	}
 section.resume-section .resume-item .resume-date{
 	min-width:none
