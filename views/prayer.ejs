@@ -95,9 +95,17 @@
                 <div class="sub-title-prayer">
                     <h3> 기도제목이 무엇인가요? </h3>
                     <form class="bigbox" action="/addprayer" method="post">
-                        <input type="text" class="pray_input" id="pray_detail" name="pray_detail" placeholder="기도제목" required=true>
-                        <input type="text" class="pray_input" id="pray_name" name="pray_name" placeholder="이름/익명">
-                        <input type="submit" class="pray_button" value="입력">
+                      <div class="form-group" id="prayer_detail_field">
+                        <input type="text" class="form-control" id="pray_detail" name="pray_detail" placeholder="기도제목을 입력하세요" required=true>
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" id="pray_name" name="pray_name" placeholder="이름/익명">
+                        </div>
+                        <div class="col">
+                          <button type="submit" class="btn btn-primary">입력</button>
+                        </div>
+                      </div>
                     </form>
                 </div>
 
