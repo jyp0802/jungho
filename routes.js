@@ -33,6 +33,8 @@ module.exports = function(app) {
 	app.post('/addprayer', function(req, res){
 		var detail = req.body.pray_detail;
 		var user = req.body.pray_name;
+		if (user == "")
+			user = "익명";
 		connection.query("INSERT INTO Prayers (user, detail, post_date) values (?,?,NOW());", [user, detail], function(err, rows) {
 			if (err)
 				console.log(err);
