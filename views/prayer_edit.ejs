@@ -69,7 +69,7 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
-                <button class="edit-button" id="edit_mine">수정하기</button>
+                <button class="edit-button" id="edit_mine">수정 완료</button>
                 <h1> 기도제목 </h1>
                 <div class="intro">
                   <p>기도제목을 남기시면 기도해드리겠습니다</p>
@@ -81,11 +81,21 @@
                       <% for (x in myprayers) { %>
                         <li>
                           <div>
-                          <i class="fa-li fas fa-angle-right"></i>
+                          <i class="fa-li fas fa-minus" ></i>
                           <%= myprayers[x].detail %> 
                           </div>
                         </li>
                       <% } %>
+                      <form class="bigbox" action="/addmyprayer" method="post">
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" id="pray_add" name="pray_add" placeholder="기도제목" required>
+                          </div>
+                          <div class="col">
+                            <button type="submit" class="btn btn-primary">입력</button>
+                          </div>
+                        </div>
+                      </form>
                     </ul>
                 </div>
                 
@@ -93,14 +103,14 @@
                     <h3> 기도제목이 무엇인가요? </h3>
                     <form class="bigbox" action="/addotherprayer" method="post">
                       <div class="form-group" id="prayer_detail_field">
-                        <input type="text" class="form-control" id="pray_detail" name="pray_detail" placeholder="기도제목을 입력하세요" required>
+                        <input type="text" class="form-control" id="pray_detail" name="pray_detail" placeholder="기도제목을 입력하세요" disabled>
                       </div>
                       <div class="form-row">
                         <div class="col">
-                          <input type="text" class="form-control" id="pray_name" name="pray_name" placeholder="이름/익명">
+                          <input type="text" class="form-control" id="pray_name" name="pray_name" placeholder="이름/익명" disabled>
                         </div>
                         <div class="col">
-                          <button type="submit" class="btn btn-primary">입력</button>
+                          <button type="submit" class="btn btn-primary" disabled>입력</button>
                         </div>
                       </div>
                     </form>
@@ -112,7 +122,7 @@
                         <% for (x in otherprayers) { %>
                         <li>
                             <div>
-                            <i class="fa-li fas fa-angle-right"></i>
+                            <i class="fa-li fas fa-minus"></i>
                             "<%= otherprayers[x].detail %>" by <%= otherprayers[x].user %>
                             </div>
                         </li>
@@ -131,14 +141,13 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <script>        
+    <script>
       document.querySelector('#edit_mine').addEventListener('click', function() {
-        var pwd = window.prompt("비밀번호");
-        if (pwd == "wjdgh") {
-          window.location = "/prayer_edit";
-        } else if (pwd != null) {
-          window.alert("비밀번호가 틀렸습니다. 관리자만이 페이지를 수정할 수 있습니다.");
-        }
+        window.location = "/prayer";
+      })
+      
+      document.querySelector('#edit_mine').addEventListener('click', function() {
+        window.location = "/prayer";
       })
     </script>
 </body>

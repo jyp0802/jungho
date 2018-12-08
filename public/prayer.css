@@ -1,3 +1,23 @@
 #prayer_detail_field{
     margin-bottom: 4px;
 }
+
+.edit-button{
+    font-size: 14px;
+    color: gray;
+    float: right;
+    font-style: italic;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10%;
+}
+
+.pray_add{
+    width: 290px;
+}
+
+.fa-minus{
+    cursor: pointer;
+    color: #e00000;
+}
